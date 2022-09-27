@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+### Name of feature:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Estimate of time needed to complete: 4 hours
 
-## Available Scripts
+Start time: 2:11
 
-In the project directory, you can run:
+Finish time: 6:53
 
-### `npm start`
+Actual time needed to complete: 4 hours 40 minutes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Project Name
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Author**: Cianenry Danan
+**Version**: 1.0.0
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Let's the user input a city name in the search bar and after hitting the explore now button displays the name and coordinates of the searched location and an image of the map location. Error codes are displayed to the corresponding error.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Create a new local repo with the "create-react-app" command.
+2. Install axios with the "npm i axios" command.
+3. Install boot strap with "npm i bootstrap react-bootstrap" command.
+4. Link LocationsIQ API using by creating an env. and adding key.
+5. Create a form to query LocationIQ for coordinates.
+6. Create code to display location name, coordinates and map image after location search.
+7. Create code to display error messages for when an error occurs.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+* JavaScript
+* CSS
+* React.js
+* Bootstrap
+* Axios JS Library
+* LocationIQ Server/API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Change Log
 
-### `npm run eject`
+09-026-2022 6:53pm - Application now displays location name and image after location search and displays an error message when an error occurs.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Credit and Collaborations
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Collaborated with Mehtab Riar and Megan Hughes for the web cycle flow diagram.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Credit to Justin  for teaching me how to restart a server.
