@@ -8,6 +8,10 @@ Finish time: 6:53
 
 Actual time needed to complete: 4 hours 40 minutes
 
+## Web-Response Cycle Diagram
+
+![Web-Response Cycle](src/img/flow.png)
+
 # Project Name
 
 **Author**: Cianenry Danan
@@ -45,3 +49,4 @@ Let's the user input a city name in the search bar and after hitting the explore
 Collaborated with Mehtab Riar and Megan Hughes for the web cycle flow diagram.
 
 Credit to Justin  for teaching me how to restart a server.
+
