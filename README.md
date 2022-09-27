@@ -47,6 +47,15 @@ Let's the user input a city name in the search bar and after hitting the explore
 ## Credit and Collaborations
 
 Collaborated with Mehtab Riar and Megan Hughes for the web cycle flow diagram.
-
+Collaborated with Mahad Ali for the updated web cycle flow diagram.
 Credit to Justin  for teaching me how to restart a server.
 
+Name of feature: 
+
+Estimate of time needed to complete: 
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
