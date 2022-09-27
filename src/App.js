@@ -4,7 +4,7 @@ import axios from 'axios';
 import Header from './components/Header.js';
 import Main from './components/Main.js';
 import Footer from './components/Footer.js';
-import CityDisplay from './components/CityDisplay.js';
+// import CityDisplay from './components/CityDisplay.js';
 import Alert from 'react-bootstrap/Alert';
 
 import Form from 'react-bootstrap/Form';
