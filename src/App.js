@@ -66,7 +66,7 @@ class App extends React.Component {
               Explore
             </Button>
           </Form>
-        </Container>
+        
         
         <Alert show={'false'} variant='success'>
         {this.state.location.place_id && 
@@ -74,12 +74,14 @@ class App extends React.Component {
             <h2>The city is: {this.state.location.display_name}</h2>
             <h2>The lat is: {this.state.location.lat}</h2>
             <h2>The lon is: {this.state.location.lon}</h2>
+            <img src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_IQ_KEY}&center=${this.state.location.lat},${this.state.location.lon}&zoom=18`} alt="map" />
           </>
         }
         {this.state.error && 
           <h2>Oh no! {this.state.errorMessage}</h2>
         }
         </Alert>
+        </Container>
       </>
     );
   }
