@@ -12,6 +12,7 @@ class Main extends React.Component {
       <>
         <CityForm handleInput={this.props.handleInput} handleSearch={this.props.handleSearch}/>
 				<CityAlert location={this.props.location} error={this.props.error} errorMessage={this.props.errorMessage}/>
+				
       </>
     );
   }
