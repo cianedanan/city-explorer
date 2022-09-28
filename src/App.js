@@ -30,26 +30,24 @@ class App extends React.Component {
     try {
       const resLocation = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_KEY}&q=${this.state.searchQuery}&format=json`);
       this.setState({ location: resLocation.data[0]});
-      console.log(this.state.searchQuery);
-      console.log(resLocation.data[0].lat);
-      console.log(resLocation.data[0].lon);
       const resWeather = await axios.get(`http://localhost:3001/weather?searchQuery=${this.state.searchQuery}&lat=${resLocation.data[0].lat}&lon=${resLocation.data[0].lon}`);
       this.setState({weatherData: resWeather.data})
       this.setState({ error: false });
     } catch (error) {
-  
+      console.log(error);
       this.setState({ error: true });
-      this.setState({ errorMessage: error.message });
+      this.setState({ errorMessage: error.message});
       this.setState({ location: '' });
+      this.setState({weatherData: []});
     }
   };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <>
         <Header />
-        <Main handleInput={this.handleInput} handleSearch={this.handleSearch} location={this.state.location} error={this.state.error} errorMessage={this.state.errorMessage} />
+        <Main handleInput={this.handleInput} handleSearch={this.handleSearch} location={this.state.location} error={this.state.error} errorMessage={this.state.errorMessage} weatherData={this.state.weatherData}/>
         <Footer />
       </>
     );

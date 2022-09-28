@@ -15,11 +15,11 @@ Actual time needed to complete: 4 hours 40 minutes
 # Project Name
 
 **Author**: Cianenry Danan
-**Version**: 1.0.0
+**Version**: 1.0.1
 
 ## Overview
 
-Let's the user input a city name in the search bar and after hitting the explore now button displays the name and coordinates of the searched location and an image of the map location. Error codes are displayed to the corresponding error.
+Let's the user input a city name in the search bar and after hitting the explore now button displays the name coordinates and weather conditions of the searched location and an image of the map location. Error codes are displayed to the corresponding error.
 
 ## Getting Started
 
@@ -39,23 +39,16 @@ Let's the user input a city name in the search bar and after hitting the explore
 * Bootstrap
 * Axios JS Library
 * LocationIQ Server/API
+* Node.js
 
 ## Change Log
 
 09-026-2022 6:53pm - Application now displays location name and image after location search and displays an error message when an error occurs.
+
+09-026-2022 10:21am - Application now displays weather conditions for location.
 
 ## Credit and Collaborations
 
 Collaborated with Mehtab Riar and Megan Hughes for the web cycle flow diagram.
 Collaborated with Mahad Ali for the updated web cycle flow diagram.
 Credit to Justin  for teaching me how to restart a server.
-
-Name of feature: 
-
-Estimate of time needed to complete: 
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
