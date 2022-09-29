@@ -17,6 +17,8 @@ class App extends React.Component {
       error: false,
       errorMessage: '',
       weatherData: [],
+      lat: '',
+      lon: ' ',
     };
   }
 
@@ -29,10 +31,13 @@ class App extends React.Component {
     event.preventDefault();
     try {
       const resLocation = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_KEY}&q=${this.state.searchQuery}&format=json`);
-      this.setState({ location: resLocation.data[0]});
-      const resWeather = await axios.get(`http://localhost:3001/weather?searchQuery=${this.state.searchQuery}&lat=${resLocation.data[0].lat}&lon=${resLocation.data[0].lon}`);
-      this.setState({weatherData: resWeather.data})
-      this.setState({ error: false });
+      this.setState({ location: resLocation.data[0]}, );
+      this.setState({lat: resLocation.data[0].lat}, console.log(this.state.lon));
+      this.setState({lon: resLocation.data[0].lon}, () => this.getWeather());
+      
+      console.log(this.state.lat);
+      // this.getWeather();
+
     } catch (error) {
       console.log(error);
       this.setState({ error: true });
@@ -40,14 +45,45 @@ class App extends React.Component {
       this.setState({ location: '' });
       this.setState({weatherData: []});
     }
+    console.log(this.state.lon);
+    console.log(this.state.lat);
   };
 
+   getWeather = async () => {
+    try{
+      console.log(this.state.searchQuery);
+      console.log(this.state.lat);
+      console.log(this.state.lon);
+      const resWeather = await axios.get(`http://localhost:3001/weather?&searchQuery=${this.state.searchQuery}&lat=${this.state.lat}&lon=${this.state.lon}`);
+      // const API= process.env.REACT_APP_API_URL;
+      // console.log(API);
+      // const url=`${API}/weather`;
+      // const resWeather = await axios.get(url, {
+      //   params:{
+      //     searchQuery: this.state.searchQuery,
+      //     lat: this.state.lat,
+      //     lon: this.state.lon,
+      //   }
+      // });
+      this.setState({weatherData: resWeather.data}, console.log(this.state.weatherData));
+     
+      this.setState({ error: false });
+    } catch(error){
+      console.log(error);
+      this.setState({ error: true });
+      this.setState({ errorMessage: error.message});
+
+    }
+    
+   } 
+
+
   render() {
-    // console.log(this.state);
+    console.log(this.state);
     return (
       <>
         <Header />
-        <Main handleInput={this.handleInput} handleSearch={this.handleSearch} location={this.state.location} error={this.state.error} errorMessage={this.state.errorMessage} weatherData={this.state.weatherData}/>
+        <Main handleInput={this.handleInput} handleSearch={this.handleSearch} location={this.state.location} lat={this.state.lat} lon={this.state.lon} error={this.state.error} errorMessage={this.state.errorMessage} weatherData={this.state.weatherData} />
         <Footer />
       </>
     );
