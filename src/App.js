@@ -54,17 +54,15 @@ class App extends React.Component {
       console.log(this.state.searchQuery);
       console.log(this.state.lat);
       console.log(this.state.lon);
-      const resWeather = await axios.get(`http://localhost:3001/weather?&searchQuery=${this.state.searchQuery}&lat=${this.state.lat}&lon=${this.state.lon}`);
-      // const API= process.env.REACT_APP_API_URL;
-      // console.log(API);
-      // const url=`${API}/weather`;
-      // const resWeather = await axios.get(url, {
-      //   params:{
-      //     searchQuery: this.state.searchQuery,
-      //     lat: this.state.lat,
-      //     lon: this.state.lon,
-      //   }
-      // });
+      const API= process.env.REACT_APP_API_URL;
+      const url=`${API}/weather`;
+      const resWeather = await axios.get(url, {
+        params:{
+          searchQuery: this.state.searchQuery,
+          lat: this.state.lat,
+          lon: this.state.lon,
+        }
+      });
       this.setState({weatherData: resWeather.data}, console.log(this.state.weatherData));
      
       this.setState({ error: false });
