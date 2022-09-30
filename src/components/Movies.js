@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/App.css';
 
