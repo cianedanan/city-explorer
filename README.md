@@ -99,3 +99,6 @@ Finish time: 1:26 AM
 
 Actual time needed to complete: 20 minutes.
 
+![Lab-06](src/img/lab-06.png)
+![Lab-07](src/img/lab-07.png)
+![Lab-08](src/img/lab-8.png)
