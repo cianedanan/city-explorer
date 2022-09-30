@@ -1,18 +1,5 @@
-### Name of feature:
 
-Estimate of time needed to complete: 4 hours
-
-Start time: 2:11
-
-Finish time: 6:53
-
-Actual time needed to complete: 4 hours 40 minutes
-
-## Web-Response Cycle Diagram
-
-![Web-Response Cycle](src/img/flow.png)
-
-# Project Name
+# City Explorer
 
 **Author**: Cianenry Danan
 **Version**: 1.0.1
@@ -47,8 +34,62 @@ Let's the user input a city name in the search bar and after hitting the explore
 
 09-026-2022 10:21am - Application now displays weather conditions for location.
 
+9-29-2022 8:44pm - Application now displays live weather and movie data based on location search.
+
 ## Credit and Collaborations
 
-Collaborated with Mehtab Riar and Megan Hughes for the web cycle flow diagram.
-Collaborated with Mahad Ali for the updated web cycle flow diagram.
+Collaborated with Mehtab Riar, Megan Hughes, Mahad Ali, and Chris Hollis for the web cycle flow diagrams.
+Collaborated with  for the updated web cycle flow diagram.
 Credit to Justin  for teaching me how to restart a server.
+
+![Lab-06](src/img/lab-06.png)
+
+![Lab-07](src/img/lab-07.png)
+
+![Lab-08](src/img/lab-08.png)
+
+### Name of feature: Display Coordinates and Map
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 2:11
+
+Finish time: 6:53
+
+Actual time needed to complete: 4 hours 40 minutes
+
+### Name of feature: Display weather data
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 3:30 PM
+
+Stop time: 10:00 PM
+
+time: 6.5 hours
+
+Start time: 7:00 AM
+
+Finish time: 10:28 AM
+
+Actual time needed to complete: 10 hours.
+
+### Name of feature: Populate weather forecast with accurate information
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 2:15 pm
+
+Finish time: 10:00 pm
+
+Actual time needed to complete: 8 hours 15 minutes.
+
+### Name of feature: Add movie info after a city search
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 1:10 pm
+
+Finish time: 8:30 pm
+
+Actual time needed to complete: 7 hours 20 minutes.
