@@ -57,6 +57,7 @@ class Main extends React.Component {
         params: {
           lat: this.state.lat,
           lon: this.state.lon,
+          searchQuery: this.state.searchQuery,
         },
       });
       this.setState(
