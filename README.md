@@ -3,7 +3,7 @@
 # Project Name
 
 **Author**: Cianenry Danan
-**Version**: 1.0.2
+**Version**: 1.0.3
 
 ## Overview
 
@@ -39,8 +39,7 @@ Let's the user input a city name in the search bar then displays coordinates, a 
 
 ## Credit and Collaborations
 
-Collaborated with Mehtab Riar and Megan Hughes for the web cycle flow diagram.
-Collaborated with Mahad Ali for the updated web cycle flow diagram.
+Collaborated with Mehtab Riar, Megan Hughes, Mahad Ali, Chris Hollis, Ben Lieberman for the web cycle flow diagram.
 Credit to Justin  for teaching me how to restart a server.
 
 ### Name of feature: Display a map with coordinates
@@ -98,4 +97,28 @@ Start time: 1:00 AM
 Finish time: 1:26 AM
 
 Actual time needed to complete: 20 minutes.
+
+### Name of feature: Create a cache to store data
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 10:31 PM
+
+Finish time: 11:10 PM
+
+Actual time needed to complete: 49
+
+
+![WWRC Lab-06](src/img/WRRC-6.png)
+
+
+![WWRC Lab-07](src/img/WRRC-7.png)
+
+
+![WWRC Lab-08](src/img/WRRC-8.png)
+
+
+![WWRC Lab-10](src/img/WRRC-10.png)
+
+
 
