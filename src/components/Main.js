@@ -88,6 +88,7 @@ class Main extends React.Component {
       this.setState({ errorMessage: error.message });
     }
   };
+  
   render() {
     return (
       <>
